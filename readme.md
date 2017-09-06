@@ -1,0 +1,1 @@
+This is the last of the techdegree projects. It will be a website that will consist of all the other projects I have, and as a personal webpage to show of my portfolio.
