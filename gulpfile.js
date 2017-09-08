@@ -7,12 +7,12 @@ const gulp = require('gulp'),
 const sassFileLoc = 'src/scss/application.scss';
 const cssLoc = 'src/css'
 
-gulp.task('webserver', ['watch'] () => {
+gulp.task('webserver', ['watch'], () => {
 	return gulp.src('src')
 	.pipe(webserver({
 		livereload: {
-			enable: true,
-			}	
+			enable: true
+			},
     open: true,
     fallback: 'index.html',
 	}));
