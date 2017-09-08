@@ -24,8 +24,13 @@ gulp.task('sass', () => {
     .pipe(gulp.dest(cssLoc));
 });
 
+
 gulp.task('watch', () => {
   return gulp.watch(sassFileLoc, ['sass']);
+});
+
+gulp.task('devMode', ['webserver', 'watch'], () => {
+	console.log('Development Mode Activcated!');
 });
 
 gulp.task('default', ['watch']);
