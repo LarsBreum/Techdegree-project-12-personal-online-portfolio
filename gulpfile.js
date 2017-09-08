@@ -25,7 +25,7 @@ gulp.task('sass', () => {
 });
 
 
-gulp.task('watch', () => {
+gulp.task('watch', ['sass'], () => {
   return gulp.watch(sassFileLoc, ['sass']);
 });
 
