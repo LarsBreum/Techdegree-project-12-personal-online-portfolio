@@ -10,6 +10,7 @@ footer,
 header {
 	padding: 0 $gutter;
 	border-bottom: 5px solid $color-secondary-accent;
+	z-index: 1;
 }
 
 .img-container {
@@ -19,6 +20,7 @@ header {
 	}
 }
 
+@import 'nav';
 @import 'header';
 @import 'main';
 @import 'userInfo';

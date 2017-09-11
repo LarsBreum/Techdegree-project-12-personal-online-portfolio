@@ -1,0 +1,13 @@
+/***** Building mobile nav *****/
+
+.navigation {
+	list-style: none;
+    background: #111;
+    position: fixed;
+    width: 50%;
+    right: -50%;
+}
+
+#nav-trigger {
+	float: right;
+}

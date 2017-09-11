@@ -25,12 +25,24 @@ aside,
 footer,
 header {
   padding: 0 10px;
-  border-bottom: 5px solid #5b5b5b; }
+  border-bottom: 5px solid #5b5b5b;
+  z-index: 1; }
 
 .img-container {
   width: 100%; }
   .img-container img {
     max-width: 100%; }
+
+/***** Building mobile nav *****/
+.navigation {
+  list-style: none;
+  background: #111;
+  position: fixed;
+  width: 50%;
+  right: -50%; }
+
+#nav-trigger {
+  float: right; }
 
 header {
   padding: 10px;
