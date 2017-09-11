@@ -66,5 +66,7 @@ main {
     border: 7px solid #FFA500; }
   .portfolio p, .portfolio li {
     color: black; }
+  .portfolio h3, .portfolio h4, .portfolio h5, .portfolio h6 {
+    color: black; }
 
 /*# sourceMappingURL=application.css.map */
