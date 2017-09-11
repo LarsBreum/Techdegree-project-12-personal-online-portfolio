@@ -1,0 +1,26 @@
+.wrapper {
+	border-right: 5px solid $color-secondary-accent;
+	border-left: 5px solid $color-secondary-accent;
+	background: #3c3c3c;
+	padding: $gutter;
+}
+main,
+aside,
+footer,
+header {
+	padding: 0 $gutter;
+	border-bottom: 5px solid $color-secondary-accent;
+}
+
+.img-container {
+	width: 100%;
+	img {
+		max-width: 100%;
+	}
+}
+
+@import 'header';
+@import 'main';
+@import 'userInfo';
+@import 'portfolio';
+
