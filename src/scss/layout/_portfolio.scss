@@ -1,0 +1,10 @@
+/****************************
+***** PORTFOLIO SECTION *****
+****************************/
+.portfolio {
+	display: flex;
+	flex-flow: column nowrap;
+	.project {
+		max-width: 320px;
+	}
+}

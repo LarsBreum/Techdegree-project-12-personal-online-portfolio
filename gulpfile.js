@@ -2,6 +2,7 @@
 const gulp = require('gulp'),
 			sass = require('gulp-sass'),
 			webserver = require('gulp-webserver');
+			sourcemaps = require('gulp-sourcemaps');
 
 //File location variables
 const sassFileLoc = 'src/scss/application.scss';
@@ -25,7 +26,7 @@ gulp.task('sass', () => {
 });
 
 
-gulp.task('watch', ['sass'], () => {
+gulp.task('sass:watch', ['sass'], () => {
   return gulp.watch(sassFileLoc, ['sass']);
 });
 
@@ -33,4 +34,6 @@ gulp.task('devMode', ['webserver', 'watch'], () => {
 	console.log('Development Mode Activcated!');
 });
 
-gulp.task('default', ['watch']);
+gulp.task('default', () => {
+	console.log('no build task specified yet!')
+});

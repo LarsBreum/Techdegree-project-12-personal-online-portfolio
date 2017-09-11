@@ -1,7 +1,30 @@
+@import url("https://fonts.googleapis.com/css?family=PT+Sans|Slabo+27px");
 * {
   box-sizing: border-box; }
 
-.wrapper {
-  display: flex;
-  flex-flow: column nowrap;
+body {
+  margin: 0;
+  font-family: 'Slabo 27px', serif; }
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: 'PT Sans', sans-serif; }
+
+main,
+aside,
+footer,
+header {
+  padding: 0 10px; }
+
+.img-container {
   width: 100%; }
+  .img-container img {
+    max-width: 100%; }
+
+/****************************
+***** PORTFOLIO SECTION *****
+****************************/
+.portfolio {
+  display: flex;
+  flex-flow: column nowrap; }
+  .portfolio .project {
+    max-width: 320px; }
