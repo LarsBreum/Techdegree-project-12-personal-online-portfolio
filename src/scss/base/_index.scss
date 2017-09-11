@@ -1,0 +1,15 @@
+ * {
+ 	box-sizing: border-box;
+ }
+ body {
+ 	margin: 0;
+ 	font-family: 'Slabo 27px', serif;
+ }
+ h1, h2, h3, h4, h5, h6 {
+ 	font-family: 'PT Sans', sans-serif;
+ 	color: $color-primary-accent;
+ }
+ p, li {
+ 	color: $color-primary-font;
+ 	font-size: 1.1em;
+ }
