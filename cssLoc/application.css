@@ -27,6 +27,7 @@ header {
   display: flex;
   flex-flow: column nowrap; }
   .portfolio .project {
-    max-width: 320px; }
+    max-width: 320px;
+    background: red; }
 
-/*# sourceMappingURL=application.css.map */
+/*# sourceMappingURL=src/css/application.css.map */
