@@ -35,11 +35,46 @@ header {
 
 /***** Building mobile nav *****/
 .navigation {
-  list-style: none;
   background: #111;
   position: fixed;
   width: 50%;
-  right: -50%; }
+  transition: right .25s ease-out;
+  right: -50%;
+  background: white;
+  height: 100%;
+  border: 5px solid #FFA500;
+  border-radius: 5px;
+  font-family: 'PT Sans', sans-serif;
+  margin-top: 5px; }
+  .navigation ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0; }
+    .navigation ul li {
+      padding: 10px;
+      display: inline-block;
+      width: 100%;
+      border-bottom: 1px solid #5b5b5b;
+      transition: background .2s; }
+      .navigation ul li:hover {
+        background: #3c3c3c;
+        cursor: pointer;
+        font-weight: bold; }
+        .navigation ul li:hover a {
+          color: #FFA500; }
+      .navigation ul li a {
+        color: black;
+        text-decoration: none; }
+        .navigation ul li a:active {
+          color: #FFA500;
+          font-weight: bold; }
+
+.navOnCanvas {
+  right: 0%; }
+
+.mainOffCanvas {
+  position: relative;
+  right: 50%; }
 
 #nav-trigger {
   float: right; }
@@ -53,7 +88,8 @@ header {
     margin-top: 0; }
 
 main {
-  background: #3c3c3c; }
+  background: #3c3c3c;
+  transition: right .25 ease-out; }
 
 .user-info .img-container {
   width: 120px;
@@ -70,7 +106,7 @@ main {
   flex-flow: column nowrap;
   border-radius: 5px; }
   .portfolio .project {
-    max-width: 320px;
+    width: 100%;
     margin: 10px 0;
     border-radius: 5px;
     background: white;
