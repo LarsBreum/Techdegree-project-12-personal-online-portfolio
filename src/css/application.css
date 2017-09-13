@@ -1,4 +1,39 @@
 @import url("https://fonts.googleapis.com/css?family=PT+Sans|Slabo+27px");
+.button, .nav-trigger {
+  color: white;
+  padding: 5px;
+  border: none;
+  background: #5b5b5b;
+  border-radius: 5px;
+  font-weight: bold;
+  font-size: 1.05em; }
+
+.nav-trigger {
+  border: 3px solid #FFA500;
+  position: fixed;
+  right: 10px;
+  transition: right .25s ease-out; }
+
+.bar1, .bar2, .bar3 {
+  width: 35px;
+  height: 5px;
+  background-color: #333;
+  margin: 6px 0;
+  transition: 0.4s; }
+
+.change .bar1 {
+  -webkit-transform: rotate(-45deg) translate(-9px, 6px);
+  transform: rotate(-45deg) translate(-9px, 6px); }
+
+/* Fade out the second bar */
+.change .bar2 {
+  opacity: 0; }
+
+/* Rotate last bar */
+.change .bar3 {
+  -webkit-transform: rotate(45deg) translate(-8px, -8px);
+  transform: rotate(45deg) translate(-8px, -8px); }
+
 * {
   box-sizing: border-box; }
 
@@ -41,7 +76,6 @@ header {
   transition: right .25s ease-out;
   right: -50%;
   background: white;
-  height: 100%;
   border: 5px solid #FFA500;
   border-radius: 5px;
   font-family: 'PT Sans', sans-serif;
@@ -72,12 +106,12 @@ header {
 .navOnCanvas {
   right: 0%; }
 
-.mainOffCanvas {
+.moveToLeft {
   position: relative;
   right: 50%; }
 
-#nav-trigger {
-  float: right; }
+.navTriggerLeft {
+  right: 50%; }
 
 header {
   padding: 10px;

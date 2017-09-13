@@ -7,7 +7,6 @@
   transition: right .25s ease-out;
   right: -50%;
   background: $color-content-bg;
-  height: 100%;
   border: 5px solid $color-primary-accent;
   border-radius: 5px;
   font-family: 'PT Sans', sans-serif;
@@ -45,12 +44,10 @@
 .navOnCanvas {
 	right: 0%;
 }
-.mainOffCanvas {
+.moveToLeft {
 	position: relative;
 	right: 50%;
 }
-
-#nav-trigger {
-	float: right;
+.navTriggerLeft {
+	right: 50%;
 }
-

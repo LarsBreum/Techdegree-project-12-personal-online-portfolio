@@ -1,8 +1,10 @@
+//nav script
 const navTrigger = document.getElementById('nav-trigger');
 const nav = document.querySelector('.navigation');
-const main = document.querySelector('main');
+const main = document.querySelectorAll('main, footer');
 
 navTrigger.addEventListener('click', () => {
 	nav.classList.toggle('navOnCanvas');
-	main.classList.toggle('mainOffCanvas');
+	navTrigger.classList.toggle('change');
+	navTrigger.classList.toggle('navTriggerLeft');
 });

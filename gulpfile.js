@@ -8,7 +8,7 @@ const gulp = require('gulp'),
 const sassFileLoc = 'src/scss/application.scss';
 const cssLoc = 'src/css'
 
-gulp.task('webserver', ['sass:watch'], () => {
+gulp.task('webserver', () => {
 	return gulp.src('src')
 	.pipe(webserver({
 		livereload: {
