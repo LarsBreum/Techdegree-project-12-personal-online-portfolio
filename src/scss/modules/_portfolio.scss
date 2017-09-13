@@ -1,7 +1,7 @@
 /****************************
 ***** PORTFOLIO SECTION *****
 ****************************/
-.portfolio {
+.flex-container {
 	display: flex;
 	flex-flow: column nowrap;
 	border-radius: 5px;
@@ -12,6 +12,14 @@
 		background: $color-content-bg;
 		padding: $gutter;
 		border: 7px solid $color-primary-accent;
+	}
+	@media screen and (min-width: 768px) {
+		flex-flow: row wrap;
+		.project {
+			flex-basis: 40%;
+			flex-grow: 1;
+			margin: 0 $gutter $gutter;
+		}
 	}
 	p, li {
 		color: $color-secondary-font;

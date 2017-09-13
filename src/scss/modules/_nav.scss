@@ -1,45 +1,53 @@
 /***** Building mobile nav *****/
 
 .navigation {
-  background: #111;
+  background: $color-content-bg;
+  @media screen and (min-width: $br-med) {
+  }
+  ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    li {
+      padding: $gutter;
+      display: inline-block;
+      width: 100%;
+      border-bottom: 1px solid $color-secondary-accent;
+      transition: background .2s;
+      &:hover {
+        background: $color-primary-bg;
+        cursor: pointer;
+        font-weight: bold;
+        a {
+          color: $color-primary-accent;
+        }
+      }
+      a {
+        color: $color-secondary-font;
+        text-decoration: none;
+        &:active {
+          color: $color-primary-accent;
+          font-weight: bold;
+        }
+      }
+    }
+  }
+}
+
+
+.mobile-nav {
+  @media screen and (min-width: $br-med) {
+    display: none;  
+  }
   position: fixed;
   width: 50%;
   height: 100%;
   right: -50%;
   top: 0;
-  background: $color-content-bg;
   border-left: 5px solid $color-primary-accent;
   border-top: 5px solid $color-primary-accent;
   font-family: 'PT Sans', sans-serif;
   @extend %transition-right;
-  ul {
-  	list-style-type: none;
-  	padding: 0;
-  	margin: 0;
-  	li {
-  		padding: $gutter;
-  		display: inline-block;
-  		width: 100%;
-  		border-bottom: 1px solid $color-secondary-accent;
-  		transition: background .2s;
-  		&:hover {
-  			background: $color-primary-bg;
-  			cursor: pointer;
-  			font-weight: bold;
-  			a {
-  				color: $color-primary-accent;
-  			}
-  		}
-  		a {
-  			color: $color-secondary-font;
-  			text-decoration: none;
-  			&:active {
-  				color: $color-primary-accent;
-  				font-weight: bold;
-  			}
-  		}
-  	}
-  }
 }
 
 .navOnCanvas {
@@ -52,4 +60,9 @@
 .navTriggerLeft {
 	right: 52%;
 	position: fixed;
+}
+.nav-trigger {
+  @media screen and (min-width: $br-med) {
+    display: none;  
+  }
 }

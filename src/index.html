@@ -9,7 +9,7 @@
   <link rel="stylesheet" href="css/application.css">
 </head>
 <body>
-	<nav class="navigation">
+	<nav class="navigation mobile-nav">
 		<ul>
 			<li class="nav-item"><a href="#/">Home</a></li>
 			<li class="nav-item"><a href="#/">Portfolio</a></li>
@@ -22,6 +22,14 @@
 				<h1>Lars Breum</h1>
 				<p class="tagline">Online Portfolio</p>
 			</div>
+		<nav class="navigation">
+			<ul>
+				<li class="nav-item"><a href="#/">Home</a></li>
+				<li class="nav-item"><a href="#/">Portfolio</a></li>
+				<li class="nav-item"><a href="#/">About Lars</a></li>
+				<li class="nav-item"><a href="#/">About this website</a></li>
+			</ul>
+		</nav>
 			<button class="nav-trigger" type="button" id="nav-trigger">
 				<div class="bar1 change"></div>
 				<div class="bar2 change"></div>
@@ -41,47 +49,48 @@
 			</section>
 			<section class="flex portfolio">
 				<h2>Portfolio</h2>
-				<div class="project">
-					<div class="img-container">
-						<img src="img/project-5-sm.PNG" alt="Project 5 CSS to SASS">
+				<div class="flex-container">
+					<div class="project">
+						<div class="img-container">
+							<img src="img/project-5-sm.PNG" alt="Project 5 CSS to SASS">
+						</div>
+						<div class="project-description">
+							<h3>CSS to SASS</h3>
+							<p>Refactored a responsive website from CSS to SASS, and made the code way more DRY</p>
+							<h5>Skills used/acquired</h5>
+							<ul>
+								<li>Responsive Design</li>
+								<li>SASS/CSS</li>
+								<li>HTML5</li>
+								<li>Media Queries</li>
+							</ul>
+							<a href="https://github.com/LarsBreum/Techdegree-project-5-CSS-to-SASS" target="_blank">Check out the source code</a><br>
+							<a href="https://larsbreum.github.io/Techdegree-project-5-CSS-to-SASS/" target="_blank">Check out a live version</a>
+						</div>
 					</div>
-					<div class="project-description">
-						<h3>CSS to SASS</h3>
-						<p>Refactored a responsive website from CSS to SASS, and made the code way more DRY</p>
-						<h5>Skills used/acquired</h5>
-						<ul>
-							<li>Responsive Design</li>
-							<li>SASS/CSS</li>
-							<li>HTML5</li>
-							<li>Media Queries</li>
-						</ul>
-						<a href="https://github.com/LarsBreum/Techdegree-project-5-CSS-to-SASS" target="_blank">Check out the source code</a><br>
-						<a href="https://larsbreum.github.io/Techdegree-project-5-CSS-to-SASS/" target="_blank">Check out a live version</a>
-					</div>
-				</div>
-				<div class="project">
-					<div class="img-container">
-						<img src="img/project-9.png" alt="Project 9 - web app dashboard">
-					</div>
-					<div class="project-description">
-						<h3>Web app dashboard</h3>
-						<p>Developed a webapp dashboard using graph.js, SASS and jQuery</p>
-						<h5>Skills used/acquired</h5>
-						<ul>
-							<li>graph.js</li>
-							<li>jQuery</li>
-							<li>Developed a site from scratch</li>
-							<li>sgv's</li>
-						</ul>
-						<a href="https://github.com/LarsBreum/Techdegree-project-9-Web-App-Dashboard" target="_blank">Check out the source code</a><br>
-						<a href="https://larsbreum.github.io/Techdegree-project-9-Web-App-Dashboard/" target="_blank">Check out a live version</a>
+					<div class="project">
+						<div class="img-container">
+							<img src="img/project-9.png" alt="Project 9 - web app dashboard">
+						</div>
+						<div class="project-description">
+							<h3>Web app dashboard</h3>
+							<p>Developed a webapp dashboard using graph.js, SASS and jQuery</p>
+							<h5>Skills used/acquired</h5>
+							<ul>
+								<li>graph.js</li>
+								<li>jQuery</li>
+								<li>Developed a site from scratch</li>
+								<li>sgv's</li>
+							</ul>
+							<a href="https://github.com/LarsBreum/Techdegree-project-9-Web-App-Dashboard" target="_blank">Check out the source code</a><br>
+							<a href="https://larsbreum.github.io/Techdegree-project-9-Web-App-Dashboard/" target="_blank">Check out a live version</a>
+						</div>
 					</div>
 				</div>
 			</section>
 		</main>
-		<aside>
-		</aside>
-		<footer>
+	</div>
+	<footer>
 			<section class="about-site">
 				<h2>About this site</h2>
 				<p>This website was built as the last project in the treehouse techdegree. It is currently a static site hosted on github pages. <br>
@@ -89,7 +98,6 @@
 			</section>
 			<p>&copy; LarsBreum 2017</p>
 		</footer>
-	</div>
   <script src="js/main.js"></script>
 </body>
 </html>
