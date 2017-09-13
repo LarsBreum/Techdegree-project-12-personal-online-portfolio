@@ -126,6 +126,9 @@ header {
   align-items: flex-start;
   justify-content: space-between; }
   header h1 {
+    margin: 0; }
+  header p {
+    text-align: left;
     margin-top: 0; }
 
 main {

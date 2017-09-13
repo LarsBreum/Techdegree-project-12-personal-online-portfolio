@@ -2,7 +2,6 @@
 const navTrigger = document.getElementById('nav-trigger');
 const nav = document.querySelector('.navigation');
 const wrapper = document.querySelectorAll('.wrapper, header');
-console.log(wrapper);
 
 navTrigger.addEventListener('click', () => {
 	nav.classList.toggle('navOnCanvas');
