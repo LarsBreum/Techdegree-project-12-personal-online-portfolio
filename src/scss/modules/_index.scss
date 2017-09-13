@@ -3,13 +3,13 @@
 	border-left: 5px solid $color-secondary-accent;
 	background: #3c3c3c;
 	padding: $gutter;
+	@extend %transition-right;
 }
 main,
 aside,
 footer,
 header {
 	padding: 0 $gutter;
-	border-bottom: 5px solid $color-secondary-accent;
 	z-index: 1;
 }
 

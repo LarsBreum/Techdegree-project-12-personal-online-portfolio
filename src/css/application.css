@@ -1,4 +1,7 @@
 @import url("https://fonts.googleapis.com/css?family=PT+Sans|Slabo+27px");
+.wrapper, .navigation, header {
+  transition: right .25s ease-out; }
+
 .button, .nav-trigger {
   color: white;
   padding: 5px;
@@ -9,17 +12,14 @@
   font-size: 1.05em; }
 
 .nav-trigger {
-  border: 3px solid #FFA500;
-  position: fixed;
-  right: 10px;
-  transition: right .25s ease-out; }
-
-.bar1, .bar2, .bar3 {
-  width: 35px;
-  height: 5px;
-  background-color: #333;
-  margin: 6px 0;
-  transition: 0.4s; }
+  transition: right .25s ease-out;
+  background: none; }
+  .nav-trigger div {
+    background: #FFA500;
+    width: 35px;
+    height: 5px;
+    margin: 6px 0;
+    transition: 0.4s; }
 
 .change .bar1 {
   -webkit-transform: rotate(-45deg) translate(-9px, 6px);
@@ -49,6 +49,9 @@ p, li {
   color: white;
   font-size: 1.1em; }
 
+section {
+  border-bottom: 5px solid #5b5b5b; }
+
 .wrapper {
   border-right: 5px solid #5b5b5b;
   border-left: 5px solid #5b5b5b;
@@ -60,7 +63,6 @@ aside,
 footer,
 header {
   padding: 0 10px;
-  border-bottom: 5px solid #5b5b5b;
   z-index: 1; }
 
 .img-container {
@@ -73,13 +75,13 @@ header {
   background: #111;
   position: fixed;
   width: 50%;
-  transition: right .25s ease-out;
+  height: 100%;
   right: -50%;
+  top: 0;
   background: white;
-  border: 5px solid #FFA500;
-  border-radius: 5px;
-  font-family: 'PT Sans', sans-serif;
-  margin-top: 5px; }
+  border-left: 5px solid #FFA500;
+  border-top: 5px solid #FFA500;
+  font-family: 'PT Sans', sans-serif; }
   .navigation ul {
     list-style-type: none;
     padding: 0;
@@ -111,13 +113,18 @@ header {
   right: 50%; }
 
 .navTriggerLeft {
-  right: 50%; }
+  right: 52%;
+  position: fixed; }
 
 header {
+  border: 5px solid #5b5b5b;
   padding: 10px;
   background: #090f0f;
   color: #FFA500;
-  text-align: center; }
+  text-align: center;
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between; }
   header h1 {
     margin-top: 0; }
 

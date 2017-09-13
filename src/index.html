@@ -9,25 +9,27 @@
   <link rel="stylesheet" href="css/application.css">
 </head>
 <body>
-	<div class="wrapper flex-wrapper">
-		<header>
-			<h1>Lars Breum</h1>
-			<h2>Online Portfolio</h2>
+	<nav class="navigation">
+		<ul>
+			<li class="nav-item"><a href="#/">Home</a></li>
+			<li class="nav-item"><a href="#/">Portfolio</a></li>
+			<li class="nav-item"><a href="#/">About Lars</a></li>
+			<li class="nav-item"><a href="#/">About this website</a></li>
+		</ul>
+	</nav>
+	<header>
+			<div class="header-text">
+				<h1>Lars Breum</h1>
+				<p class="tagline">Online Portfolio</p>
+			</div>
+			<button class="nav-trigger" type="button" id="nav-trigger">
+				<div class="bar1 change"></div>
+				<div class="bar2 change"></div>
+				<div class="bar3 change"></div>
+			</button>
 		</header>
-		<nav class="navigation">
-			<ul>
-				<li class="nav-item"><a href="#/">Home</a></li>
-				<li class="nav-item"><a href="#/">Portfolio</a></li>
-				<li class="nav-item"><a href="#/">About Lars</a></li>
-				<li class="nav-item"><a href="#/">About this website</a></li>
-			</ul>
-		</nav>
+	<div class="wrapper flex-wrapper">
 		<main>
-		<button class="nav-trigger" type="button" id="nav-trigger">
-			<div class="bar1 change"></div>
-			<div class="bar2 change"></div>
-			<div class="bar3 change"></div>
-		</button>
 			<section class="user-info">
 				<h2>About Lars</h2>
 				<div class="img-container profile">

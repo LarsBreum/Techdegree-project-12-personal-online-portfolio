@@ -1,8 +1,13 @@
 header {
+	border: 5px solid $color-secondary-accent;
 	padding: $gutter;
 	background: $color-secondary-bg;
 	color: $color-primary-accent;
 	text-align: center;
+	display: flex;
+	align-items: flex-start;
+	justify-content: space-between;
+	@extend %transition-right;
 	h1 {
 		margin-top: 0;
 	}
