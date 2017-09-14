@@ -169,6 +169,9 @@ main {
 .user-info {
   background: linear-gradient(#ccc, transparent 80%), linear-gradient(transparent, #3c3c3c 100%), url("../img/waves.jpg") no-repeat center/cover;
   padding: 10px; }
+  @media screen and (min-width: 768px) {
+    .user-info {
+      height: 100vh; } }
   .user-info h2 {
     margin-top: 0; }
   .user-info .img-container {
@@ -183,6 +186,9 @@ main {
 /****************************
 ***** PORTFOLIO SECTION *****
 ****************************/
+.portfolio {
+  padding: 10px; }
+
 .flex-container {
   display: flex;
   flex-flow: column nowrap;
@@ -198,13 +204,20 @@ main {
     .flex-container {
       flex-flow: row wrap; }
       .flex-container .project {
-        flex-basis: 40%;
+        flex-basis: 45%;
         flex-grow: 1;
-        margin: 0 10px 10px;
+        margin: 2%;
         justify-content: space-between; } }
   .flex-container p, .flex-container li {
     color: black; }
   .flex-container h3, .flex-container h4, .flex-container h5, .flex-container h6 {
     color: black; }
+
+/**Footer styles**/
+footer {
+  background: #3c3c3c;
+  padding: 10px; }
+  footer h2 {
+    margin-top: 0; }
 
 /*# sourceMappingURL=application.css.map */

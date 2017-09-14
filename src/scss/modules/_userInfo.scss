@@ -3,6 +3,9 @@
 	linear-gradient(transparent, $color-primary-bg 100%),
 	url("../img/waves.jpg") no-repeat center / cover;
 	padding: $gutter;
+	@media screen and (min-width: $br-med) {
+		height: 100vh;
+	}
 	h2 {
 		margin-top: 0;
 	}

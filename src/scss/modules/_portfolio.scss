@@ -1,6 +1,9 @@
 /****************************
 ***** PORTFOLIO SECTION *****
 ****************************/
+.portfolio {
+	padding: $gutter;
+}
 .flex-container {
 	display: flex;
 	flex-flow: column nowrap;
@@ -16,9 +19,9 @@
 	@media screen and (min-width: 768px) {
 		flex-flow: row wrap;
 		.project {
-			flex-basis: 40%;
+			flex-basis: 45%;
 			flex-grow: 1;
-			margin: 0 $gutter $gutter;
+			margin: 2%;
 			justify-content: space-between;
 		}
 	}
