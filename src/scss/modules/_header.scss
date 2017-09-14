@@ -4,9 +4,15 @@ header {
 	color: $color-primary-accent;
 	text-align: center;
 	display: flex;
-	align-items: flex-end;
+	align-items: left;
 	justify-content: space-between;
+	@media screen and (min-width: $br-med) {
+		flex-flow: column nowrap;
+	}
 	@extend %transition-right;
+	.header-text {
+		padding-left: $gutter;
+	}
 	h1 {
 		margin: 0;
 	}
@@ -18,6 +24,7 @@ header {
 		display: none;
 		@media screen and (min-width: $br-med) {
 			display: initial;
+			z-index: 2;
 			ul {
 			display: flex;
 			align-self: flex-end;

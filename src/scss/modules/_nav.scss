@@ -1,8 +1,20 @@
 /***** Building mobile nav *****/
-
+.sticky-nav {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  border: 5px solid $color-secondary-accent;
+}
 .navigation {
   background: $color-content-bg;
   @media screen and (min-width: $br-med) {
+    width: 100%;
+    ul {
+      display: flex;
+      align-items: flex-end;
+
+    }
   }
   ul {
     list-style-type: none;

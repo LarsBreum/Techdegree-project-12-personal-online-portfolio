@@ -64,8 +64,21 @@ section {
     max-width: 100%; }
 
 /***** Building mobile nav *****/
+.sticky-nav {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  border: 5px solid #5b5b5b; }
+
 .navigation {
   background: white; }
+  @media screen and (min-width: 768px) {
+    .navigation {
+      width: 100%; }
+      .navigation ul {
+        display: flex;
+        align-items: flex-end; } }
   .navigation ul {
     list-style-type: none;
     padding: 0;
@@ -123,8 +136,13 @@ header {
   color: #FFA500;
   text-align: center;
   display: flex;
-  align-items: flex-end;
+  align-items: left;
   justify-content: space-between; }
+  @media screen and (min-width: 768px) {
+    header {
+      flex-flow: column nowrap; } }
+  header .header-text {
+    padding-left: 10px; }
   header h1 {
     margin: 0; }
   header p {
@@ -134,7 +152,8 @@ header {
     display: none; }
     @media screen and (min-width: 768px) {
       header nav {
-        display: initial; }
+        display: initial;
+        z-index: 2; }
         header nav ul {
           display: flex;
           align-self: flex-end; }
@@ -175,7 +194,8 @@ main {
       .flex-container .project {
         flex-basis: 40%;
         flex-grow: 1;
-        margin: 0 10px 10px; } }
+        margin: 0 10px 10px;
+        justify-content: space-between; } }
   .flex-container p, .flex-container li {
     color: black; }
   .flex-container h3, .flex-container h4, .flex-container h5, .flex-container h6 {
