@@ -12,7 +12,7 @@ navTrigger.addEventListener('click', () => {
 	}
 });
 
-//Sticky header for tablet and desktop
+//Sticky nav for tablet and desktop
 const nav = document.querySelector('header .navigation');
 const mediaQuery = window.matchMedia( "(min-width: 768px)" );
 if (mediaQuery.matches) {

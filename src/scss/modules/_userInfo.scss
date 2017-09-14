@@ -1,7 +1,14 @@
 .user-info {
+	background: linear-gradient(#ccc, transparent 80%),
+	linear-gradient(transparent, $color-primary-bg 100%),
+	url("../img/waves.jpg") no-repeat center / cover;
+	padding: $gutter;
+	h2 {
+		margin-top: 0;
+	}
 	.img-container {
 		width: 100%;
-		max-width: 260px;
+		max-width: 240px;
 		margin: 0 auto;
 	}
 	img {

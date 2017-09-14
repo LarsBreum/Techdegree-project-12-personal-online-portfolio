@@ -55,8 +55,7 @@ section {
 .wrapper {
   border-right: 5px solid #5b5b5b;
   border-left: 5px solid #5b5b5b;
-  background: #3c3c3c;
-  padding: 10px; }
+  background: #3c3c3c; }
 
 .img-container {
   width: 100%; }
@@ -78,7 +77,9 @@ section {
       width: 100%; }
       .navigation ul {
         display: flex;
-        align-items: flex-end; } }
+        align-items: flex-end; }
+        .navigation ul li {
+          border: 1px solid #5b5b5b; } }
   .navigation ul {
     list-style-type: none;
     padding: 0;
@@ -165,14 +166,19 @@ main {
   background: #3c3c3c;
   transition: right .25 ease-out; }
 
-.user-info .img-container {
-  width: 100%;
-  max-width: 260px;
-  margin: 0 auto; }
-.user-info img {
-  max-width: 100%;
-  border-radius: 50%;
-  border: 5px solid #FFA500; }
+.user-info {
+  background: linear-gradient(#ccc, transparent 80%), linear-gradient(transparent, #3c3c3c 100%), url("../img/waves.jpg") no-repeat center/cover;
+  padding: 10px; }
+  .user-info h2 {
+    margin-top: 0; }
+  .user-info .img-container {
+    width: 100%;
+    max-width: 240px;
+    margin: 0 auto; }
+  .user-info img {
+    max-width: 100%;
+    border-radius: 50%;
+    border: 5px solid #FFA500; }
 
 /****************************
 ***** PORTFOLIO SECTION *****

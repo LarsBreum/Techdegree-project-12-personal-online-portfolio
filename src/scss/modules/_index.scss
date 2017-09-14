@@ -2,7 +2,6 @@
 	border-right: 5px solid $color-secondary-accent;
 	border-left: 5px solid $color-secondary-accent;
 	background: #3c3c3c;
-	padding: $gutter;
 	@extend %transition-right;
 }
 
