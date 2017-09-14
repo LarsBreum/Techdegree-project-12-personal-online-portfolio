@@ -182,6 +182,15 @@ main {
     max-width: 100%;
     border-radius: 50%;
     border: 5px solid #FFA500; }
+  @media screen and (min-width: 768px) {
+    .user-info .info {
+      display: flex;
+      flex-basis: 46%;
+      justify-content: space-around;
+      align-items: center; }
+      .user-info .info .info1, .user-info .info info2 {
+        max-width: 50%;
+        margin: 0 10px; } }
 
 /****************************
 ***** PORTFOLIO SECTION *****

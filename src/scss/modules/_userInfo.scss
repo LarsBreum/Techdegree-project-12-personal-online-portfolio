@@ -19,4 +19,16 @@
 		border-radius: 50%;
 		border: 5px solid $color-primary-accent;
 	}
+	.info {
+		@media screen and (min-width: $br-med) {
+			display: flex;
+			flex-basis: 46%;
+			justify-content: space-around;
+			align-items: center;
+			.info1, info2 {
+				max-width: 50%;
+				margin: 0 $gutter;
+			}
+		}
+	}
 }
