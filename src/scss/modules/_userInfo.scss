@@ -1,10 +1,13 @@
 .user-info {
+	display: flex;
+	flex-flow: column nowrap;
+	align-items: flex-end;
 	background: linear-gradient(#ccc, transparent 80%),
 	linear-gradient(transparent, $color-primary-bg 100%),
 	url("../img/waves.jpg") no-repeat center / cover;
 	padding: $gutter;
 	@media screen and (min-width: $br-med) {
-		height: 100vh;
+		min-height: 100vh;
 	}
 	h2 {
 		margin-top: 0;
@@ -20,15 +23,39 @@
 		border: 5px solid $color-primary-accent;
 	}
 	.info {
+		max-width: 768px;
+		margin: 0 auto;
 		@media screen and (min-width: $br-med) {
 			display: flex;
-			flex-basis: 46%;
 			justify-content: space-around;
-			align-items: center;
 			.info1, info2 {
 				max-width: 50%;
 				margin: 0 $gutter;
 			}
+			div {
+				flex-basis: 40%;
+				font-size: 1.1em;
+			}
 		}
+	}
+}
+.img-text {
+	padding: $gutter;
+	position: relative;
+	top: -25px;
+	text-align: center;
+	background: $color-secondary-bg;
+	opacity: 0.7;
+	border: 5px solid $color-secondary-accent;
+	border-radius: 30%;
+	min-width: 280px;
+	margin: 0 auto;
+	.h2 {
+		margin-top: $gutter;
+		margin-bottom: 0;
+	}
+	p {
+		font-size: 1.2em;
+		margin-top: 0;
 	}
 }

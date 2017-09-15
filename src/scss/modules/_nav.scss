@@ -76,6 +76,7 @@
 	position: fixed;
 }
 .nav-trigger {
+  outline: none;
   @media screen and (min-width: $br-med) {
     display: none;  
   }

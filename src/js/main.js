@@ -21,7 +21,6 @@ if (mediaQuery.matches) {
 function getScrollPos() {
 		let scrollPos = window.addEventListener('scroll', (e) => {
 			scrollPos = window.scrollY;
-			console.log(scrollPos);
 			makeNavSticky(scrollPos);
 	});
 }
