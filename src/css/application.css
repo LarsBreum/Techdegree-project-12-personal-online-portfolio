@@ -2,7 +2,7 @@
 .wrapper, .mobile-nav, header {
   transition: right .25s ease-out; }
 
-.button, .nav-trigger {
+.button, .nav-trigger, .flex-container .project a {
   color: white;
   padding: 5px;
   border: none;
@@ -231,11 +231,21 @@ main {
   border-radius: 5px; }
   .flex-container .project {
     width: 100%;
-    margin: 10px 0;
-    border-radius: 5px;
-    background: white;
-    padding: 10px;
-    border: 7px solid #FFA500; }
+    max-width: 350px; }
+    .flex-container .project a {
+      display: inline-block;
+      width: 45%;
+      text-decoration: none;
+      padding: 10px;
+      margin: 2%;
+      text-align: center;
+      border: 2px solid #FFA500; }
+    .flex-container .project .img-container {
+      max-width: 320px;
+      margin: 0 auto; }
+      .flex-container .project .img-container img {
+        border: 5px solid #FFA500;
+        border-radius: 5px; }
   @media screen and (min-width: 768px) {
     .flex-container {
       flex-flow: row wrap; }
@@ -245,9 +255,23 @@ main {
         margin: 2%;
         justify-content: space-between; } }
   .flex-container p, .flex-container li {
-    color: black; }
+    color: white; }
   .flex-container h3, .flex-container h4, .flex-container h5, .flex-container h6 {
-    color: black; }
+    color: #FFA500; }
+
+.technologies {
+  display: flex;
+  flex-flow: row wrap;
+  width: 100%;
+  margin: 0;
+  padding: 0;
+  justify-content: space-between; }
+  .technologies .tech-logo {
+    list-style-type: none;
+    width: 64px; }
+    .technologies .tech-logo img {
+      height: 64px;
+      width: 64px; }
 
 /**Footer styles**/
 footer {
