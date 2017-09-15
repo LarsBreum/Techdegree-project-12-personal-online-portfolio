@@ -11,32 +11,40 @@
 	.project {
 		width: 100%;
 		max-width: 350px;
+		.project-description {
+			div {
+				@extend %flex-row;
+				margin-top: $gutter;
+			}
+		}
 		a {
 			display: inline-block;
 			width: 45%;
 			text-decoration: none;
 			padding: $gutter;
-			margin: 2%;
 			@extend .button;
 			text-align: center;
 			border: 2px solid $color-primary-accent;
 		}
 		.img-container {
-			max-width: 320px;
-			margin: 0 auto;
 			img {
 				border: 5px solid $color-primary-accent;
 				border-radius: 5px;
 			}
 		}
 	}
-	@media screen and (min-width: 768px) {
+	@media screen and (min-width: $br-med) {
 		flex-flow: row wrap;
 		.project {
 			flex-basis: 45%;
 			flex-grow: 1;
 			margin: 2%;
 			justify-content: space-between;
+		}
+		.project-description {
+			p {
+				min-height: 150px;
+			}
 		}
 	}
 	p, li {
@@ -47,6 +55,7 @@
 	}
 }
 .technologies {
+	align-self: flex-end;
 	display: flex;
 	flex-flow: row wrap;
 	width: 100%;
@@ -55,7 +64,8 @@
 	justify-content: space-between;
 	.tech-logo {
 		list-style-type: none;
-		width: 64px;
+		min-width: 64px;
+		flex-basis: 25%;
 		img {
 			height: 64px;
 			width: 64px;

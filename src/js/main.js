@@ -31,3 +31,10 @@ function makeNavSticky(scrollPos) {
 		nav.classList.remove('sticky-nav');
 	}
 }
+
+//slick caruosel for skills
+
+/*$(document).ready( () => {
+	$('').slick({
+		
+});*/
