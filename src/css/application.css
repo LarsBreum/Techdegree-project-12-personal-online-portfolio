@@ -261,6 +261,10 @@ p, li {
 
 section {
   border-bottom: 5px solid #5b5b5b; }
+  @media screen and (min-width: 768px) {
+    section .section-heading {
+      max-width: 768px;
+      margin: 0 auto; } }
 
 .wrapper {
   border-right: 5px solid #5b5b5b;
@@ -398,10 +402,8 @@ main {
     border-radius: 50%;
     border: 5px solid #FFA500; }
   .user-info .info {
-    margin: 0 auto; }
-    @media screen and (min-width: 900px) {
-      .user-info .info {
-        max-width: 80%; } }
+    margin: 0 auto;
+    max-width: 768px; }
     @media screen and (min-width: 768px) {
       .user-info .info {
         display: flex;
@@ -439,16 +441,14 @@ main {
 
 .flex-container {
   margin: 0 auto;
+  max-width: 768px;
   justify-content: space-between;
   display: flex;
   flex-flow: column nowrap;
   border-radius: 5px; }
-  @media screen and (min-width: 900px) {
-    .flex-container {
-      max-width: 80%; } }
   .flex-container .project {
     width: 100%;
-    max-width: 350px; }
+    margin: 0 auto; }
     @media screen and (min-width: 768px) {
       .flex-container .project {
         flex-basis: 33%; } }
@@ -500,10 +500,8 @@ footer {
   background: #3c3c3c;
   padding: 10px; }
   footer div {
-    margin: 0 auto; }
-    @media screen and (min-width: 900px) {
-      footer div {
-        max-width: 80%; } }
+    margin: 0 auto;
+    max-width: 768px; }
   footer h2 {
     margin-top: 0; }
 
