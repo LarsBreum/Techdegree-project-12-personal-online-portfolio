@@ -23,8 +23,7 @@
 		border: 5px solid $color-primary-accent;
 	}
 	.info {
-		max-width: 768px;
-		margin: 0 auto;
+		@include centerSection;
 		@media screen and (min-width: $br-med) {
 			display: flex;
 			justify-content: space-around;

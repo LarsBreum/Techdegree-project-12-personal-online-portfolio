@@ -398,8 +398,10 @@ main {
     border-radius: 50%;
     border: 5px solid #FFA500; }
   .user-info .info {
-    max-width: 768px;
     margin: 0 auto; }
+    @media screen and (min-width: 900px) {
+      .user-info .info {
+        max-width: 80%; } }
     @media screen and (min-width: 768px) {
       .user-info .info {
         display: flex;
@@ -436,12 +438,20 @@ main {
   padding: 10px; }
 
 .flex-container {
+  margin: 0 auto;
+  justify-content: space-between;
   display: flex;
   flex-flow: column nowrap;
   border-radius: 5px; }
+  @media screen and (min-width: 900px) {
+    .flex-container {
+      max-width: 80%; } }
   .flex-container .project {
     width: 100%;
     max-width: 350px; }
+    @media screen and (min-width: 768px) {
+      .flex-container .project {
+        flex-basis: 33%; } }
     .flex-container .project .project-description div {
       margin-top: 10px; }
     .flex-container .project a {
@@ -489,9 +499,19 @@ main {
 footer {
   background: #3c3c3c;
   padding: 10px; }
+  footer div {
+    margin: 0 auto; }
+    @media screen and (min-width: 900px) {
+      footer div {
+        max-width: 80%; } }
   footer h2 {
     margin-top: 0; }
 
+@media screen and (min-width: 768px) {
+  .skills-carousel {
+    position: relative;
+    width: 80%;
+    margin: 0 auto; } }
 .skills-carousel .slide {
   width: 64px; }
 

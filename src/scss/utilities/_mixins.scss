@@ -1,0 +1,7 @@
+//Mixins
+@mixin centerSection {
+	margin: 0 auto;
+	@media screen and (min-width: $br-lg) {
+		max-width: 80%;
+	}
+}

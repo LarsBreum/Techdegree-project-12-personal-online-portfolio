@@ -5,12 +5,17 @@
 	padding: $gutter;
 }
 .flex-container {
+	@include centerSection;
+	justify-content: space-between;
 	display: flex;
 	flex-flow: column nowrap;
 	border-radius: 5px;
 	.project {
 		width: 100%;
 		max-width: 350px;
+		@media screen and (min-width: $br-med) {
+			flex-basis: 33%;
+		}
 		.project-description {
 			div {
 				@extend %flex-row;

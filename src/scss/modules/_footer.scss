@@ -2,6 +2,9 @@
  footer {
  	background: $color-primary-bg;
  	padding: $gutter;
+ 	div {
+ 		 @include centerSection;
+ 	}
  	h2 {
  		margin-top: 0;
  	}
