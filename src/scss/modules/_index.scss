@@ -7,6 +7,9 @@
 	background: #3c3c3c;
 	@extend %transition-right;
 	margin-top: 81px;
+	@media screen and (min-width: $br-med) {
+		margin-top: 130px;
+	}
 }
 
 .img-container {
