@@ -2,6 +2,13 @@
  footer {
  	background: $color-primary-bg;
  	padding: $gutter;
+ 	a {
+ 		color: $color-primary-font;
+ 		text-decoration:  none;
+ 		&:hover {
+ 			color: $color-primary-accent;
+ 		}
+ 	}
  	div {
  		 @include centerSection;
  	}

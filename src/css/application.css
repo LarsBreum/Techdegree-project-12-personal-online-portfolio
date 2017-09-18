@@ -266,6 +266,9 @@ section {
       max-width: 768px;
       margin: 0 auto; } }
 
+* {
+  overflow-x: hidden; }
+
 .wrapper {
   border-right: 5px solid #5b5b5b;
   border-left: 5px solid #5b5b5b;
@@ -499,6 +502,11 @@ main {
 footer {
   background: #3c3c3c;
   padding: 10px; }
+  footer a {
+    color: white;
+    text-decoration: none; }
+    footer a:hover {
+      color: #FFA500; }
   footer div {
     margin: 0 auto;
     max-width: 768px; }
@@ -508,8 +516,8 @@ footer {
 @media screen and (min-width: 768px) {
   .skills-carousel {
     position: relative;
-    width: 80%;
-    margin: 0 auto; } }
+    margin: 0 auto;
+    max-width: 768px; } }
 .skills-carousel .slide {
   width: 64px; }
 

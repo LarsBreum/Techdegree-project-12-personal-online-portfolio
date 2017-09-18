@@ -1,8 +1,7 @@
 .skills-carousel {
 	@media screen and (min-width: $br-med) {
 		position: relative;
-		width: 80%;
-		margin: 0 auto;
+		@include centerSection;
 	}
 	.slide {
 		width: 64px;
