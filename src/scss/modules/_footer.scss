@@ -2,6 +2,9 @@
  footer {
  	background: $color-primary-bg;
  	padding: $gutter;
+ 	ul {
+ 		padding: 0;
+ 	}
  	a {
  		color: $color-primary-font;
  		text-decoration:  none;

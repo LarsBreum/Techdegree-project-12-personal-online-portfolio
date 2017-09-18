@@ -62,13 +62,13 @@
   border-top: 5px solid $color-primary-accent;
   font-family: 'PT Sans', sans-serif;
   @extend %transition-right;
+  z-index: 999;
 }
 
 .navOnCanvas {
 	right: 0%;
 }
 .moveToLeft {
-	position: relative;
 	right: 50%;
 }
 .navTriggerLeft {

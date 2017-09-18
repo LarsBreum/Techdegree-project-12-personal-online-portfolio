@@ -1,4 +1,5 @@
 header {
+    @extend %transition-right;
 	border: 5px solid $color-secondary-accent;
 	background: $color-secondary-bg;
 	color: $color-primary-accent;
@@ -6,6 +7,10 @@ header {
 	display: flex;
 	align-items: left;
 	justify-content: space-between;
+	position: fixed;
+	top: 0;
+	width: 100%;
+	z-index: 11111;
 	@media screen and (min-width: $br-med) {
 		flex-flow: column nowrap;
 	}

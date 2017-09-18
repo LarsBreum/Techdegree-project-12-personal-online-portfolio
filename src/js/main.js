@@ -12,26 +12,6 @@ navTrigger.addEventListener('click', () => {
 	}
 });
 
-//Sticky nav for tablet and desktop
-const nav = document.querySelector('header .navigation');
-const mediaQuery = window.matchMedia( "(min-width: 768px)" );
-if (mediaQuery.matches) {
-	getScrollPos();
-} 
-function getScrollPos() {
-		let scrollPos = window.addEventListener('scroll', (e) => {
-			scrollPos = window.scrollY;
-			makeNavSticky(scrollPos);
-	});
-}
-function makeNavSticky(scrollPos) {
-	if (scrollPos >= 80) {
-		nav.classList.add('sticky-nav');
-	} else {
-		nav.classList.remove('sticky-nav');
-	}
-}
-
 //slick caruosel for skills
 $('.skills-carousel').slick({
    dots: true,
