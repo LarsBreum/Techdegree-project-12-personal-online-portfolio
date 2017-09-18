@@ -1,9 +1,11 @@
 .skills-carousel {
-	@media screen and (min-width: $br-med) {
-		position: relative;
-		@include centerSection;
+	position: relative;
+	width: 80%;
+	margin: 0 auto;
+}
+.skills {
+	h2, p {
+		margin-left: $gutter;
 	}
-	.slide {
-		width: 64px;
-	}
+	padding-bottom: $gutter;
 }

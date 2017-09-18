@@ -266,7 +266,7 @@ section {
       max-width: 768px;
       margin: 0 auto; } }
 
-* {
+wrapper, body, main, header, footer {
   overflow-x: hidden; }
 
 .wrapper {
@@ -524,12 +524,14 @@ footer {
   footer h2 {
     margin-top: 0; }
 
-@media screen and (min-width: 768px) {
-  .skills-carousel {
-    position: relative;
-    margin: 0 auto;
-    max-width: 768px; } }
-.skills-carousel .slide {
-  width: 64px; }
+.skills-carousel {
+  position: relative;
+  width: 80%;
+  margin: 0 auto; }
+
+.skills {
+  padding-bottom: 10px; }
+  .skills h2, .skills p {
+    margin-left: 10px; }
 
 /*# sourceMappingURL=application.css.map */
