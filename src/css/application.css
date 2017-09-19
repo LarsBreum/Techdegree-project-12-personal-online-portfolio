@@ -272,7 +272,6 @@ wrapper, body, main, header, footer {
 .wrapper {
   border-right: 5px solid #5b5b5b;
   border-left: 5px solid #5b5b5b;
-  background: #3c3c3c;
   margin-top: 81px; }
   @media screen and (min-width: 768px) {
     .wrapper {
@@ -282,6 +281,9 @@ wrapper, body, main, header, footer {
   width: 100%; }
   .img-container img {
     max-width: 100%; }
+
+section:nth-child(even) {
+  background: rgba(213, 12, 232, 0.1); }
 
 /***** Building mobile nav *****/
 .sticky-nav {
@@ -526,12 +528,14 @@ footer {
 
 .skills-carousel {
   position: relative;
-  width: 80%;
-  margin: 0 auto; }
+  margin: 0 auto;
+  max-width: 768px; }
 
 .skills {
-  padding-bottom: 10px; }
-  .skills h2, .skills p {
+  padding: 10px 0;
+  margin: 0 auto;
+  max-width: 768px; }
+  .skills p, .skills h2 {
     margin-left: 10px; }
 
 /*# sourceMappingURL=application.css.map */

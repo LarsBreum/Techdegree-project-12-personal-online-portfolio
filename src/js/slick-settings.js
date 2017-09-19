@@ -11,7 +11,7 @@ $(document).ready( () => {
   	variableWidth: true,
   	responsive: [
 			{
-				breakpint: 480,
+				breakpoint: 480,
 				settings: {
 					slidesToShow: 1,
       		slidesToScroll: 1,

@@ -1,11 +1,11 @@
 .skills-carousel {
 	position: relative;
-	width: 80%;
-	margin: 0 auto;
+	@include centerSection;
 }
 .skills {
-	h2, p {
+	padding: $gutter 0;
+	@include centerSection;
+	p, h2 {
 		margin-left: $gutter;
 	}
-	padding-bottom: $gutter;
 }

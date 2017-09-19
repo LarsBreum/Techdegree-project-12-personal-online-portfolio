@@ -4,7 +4,6 @@ wrapper, body, main, header, footer {
 .wrapper {
 	border-right: 5px solid $color-secondary-accent;
 	border-left: 5px solid $color-secondary-accent;
-	background: #3c3c3c;
 	@extend %transition-right;
 	margin-top: 81px;
 	@media screen and (min-width: $br-med) {
@@ -17,6 +16,9 @@ wrapper, body, main, header, footer {
 	img {
 		max-width: 100%;
 	}
+}
+section:nth-child(even) {
+	background: $color-tertiary-accent;
 }
 
 @import 'nav';
