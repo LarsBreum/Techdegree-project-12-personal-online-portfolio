@@ -261,16 +261,29 @@ p, li {
 
 section {
   border-bottom: 5px solid #5b5b5b; }
+  @media screen and (min-width: 768px) {
+    section .section-heading {
+      max-width: 768px;
+      margin: 0 auto; } }
+
+wrapper, body, main, header, footer {
+  overflow-x: hidden; }
 
 .wrapper {
   border-right: 5px solid #5b5b5b;
   border-left: 5px solid #5b5b5b;
-  background: #3c3c3c; }
+  margin-top: 81px; }
+  @media screen and (min-width: 768px) {
+    .wrapper {
+      margin-top: 130px; } }
 
 .img-container {
   width: 100%; }
   .img-container img {
     max-width: 100%; }
+
+section:nth-child(even) {
+  background: rgba(213, 12, 232, 0.1); }
 
 /***** Building mobile nav *****/
 .sticky-nav {
@@ -321,7 +334,8 @@ section {
   top: 0;
   border-left: 5px solid #FFA500;
   border-top: 5px solid #FFA500;
-  font-family: 'PT Sans', sans-serif; }
+  font-family: 'PT Sans', sans-serif;
+  z-index: 999; }
   @media screen and (min-width: 768px) {
     .mobile-nav {
       display: none; } }
@@ -330,7 +344,6 @@ section {
   right: 0%; }
 
 .moveToLeft {
-  position: relative;
   right: 50%; }
 
 .navTriggerLeft {
@@ -350,7 +363,11 @@ header {
   text-align: center;
   display: flex;
   align-items: left;
-  justify-content: space-between; }
+  justify-content: space-between;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 11111; }
   @media screen and (min-width: 768px) {
     header {
       flex-flow: column nowrap; } }
@@ -398,20 +415,19 @@ main {
     border-radius: 50%;
     border: 5px solid #FFA500; }
   .user-info .info {
-    margin: 0 auto; }
-    @media screen and (min-width: 900px) {
-      .user-info .info {
-        max-width: 80%; } }
+    margin: 0 auto;
+    max-width: 768px; }
     @media screen and (min-width: 768px) {
       .user-info .info {
         display: flex;
-        justify-content: space-around; }
+        justify-content: space-between; }
         .user-info .info .info1, .user-info .info info2 {
-          max-width: 50%;
           margin: 0 10px; }
         .user-info .info div {
-          flex-basis: 40%;
-          font-size: 1.1em; } }
+          flex-basis: 50%;
+          margin: 0 2%;
+          font-size: 1.1em;
+          text-align: center; } }
 
 .img-text {
   padding: 10px;
@@ -439,16 +455,14 @@ main {
 
 .flex-container {
   margin: 0 auto;
+  max-width: 768px;
   justify-content: space-between;
   display: flex;
   flex-flow: column nowrap;
   border-radius: 5px; }
-  @media screen and (min-width: 900px) {
-    .flex-container {
-      max-width: 80%; } }
   .flex-container .project {
     width: 100%;
-    max-width: 350px; }
+    margin: 0 auto; }
     @media screen and (min-width: 768px) {
       .flex-container .project {
         flex-basis: 33%; } }
@@ -499,20 +513,29 @@ main {
 footer {
   background: #3c3c3c;
   padding: 10px; }
+  footer ul {
+    padding: 0; }
+  footer a {
+    color: white;
+    text-decoration: none; }
+    footer a:hover {
+      color: #FFA500; }
   footer div {
-    margin: 0 auto; }
-    @media screen and (min-width: 900px) {
-      footer div {
-        max-width: 80%; } }
+    margin: 0 auto;
+    max-width: 768px; }
   footer h2 {
     margin-top: 0; }
 
-@media screen and (min-width: 768px) {
-  .skills-carousel {
-    position: relative;
-    width: 80%;
-    margin: 0 auto; } }
-.skills-carousel .slide {
-  width: 64px; }
+.skills-carousel {
+  position: relative;
+  margin: 0 auto;
+  max-width: 768px; }
+
+.skills {
+  padding: 10px 0;
+  margin: 0 auto;
+  max-width: 768px; }
+  .skills p, .skills h2 {
+    margin-left: 10px; }
 
 /*# sourceMappingURL=application.css.map */

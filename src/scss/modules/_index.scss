@@ -1,8 +1,14 @@
+wrapper, body, main, header, footer {
+	overflow-x: hidden;
+}
 .wrapper {
 	border-right: 5px solid $color-secondary-accent;
-	border-left: 5px solid $color-secondary-accent;
-	background: #3c3c3c;
+	border-left: 5px solid $color-secondary-accent;	
 	@extend %transition-right;
+	margin-top: 81px;
+	@media screen and (min-width: $br-med) {
+		margin-top: 130px;
+	}
 }
 
 .img-container {
@@ -10,6 +16,9 @@
 	img {
 		max-width: 100%;
 	}
+}
+section:nth-child(even) {
+	background: $color-tertiary-accent;
 }
 
 @import 'nav';

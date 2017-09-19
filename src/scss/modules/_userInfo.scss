@@ -26,14 +26,15 @@
 		@include centerSection;
 		@media screen and (min-width: $br-med) {
 			display: flex;
-			justify-content: space-around;
+			justify-content: space-between;
 			.info1, info2 {
-				max-width: 50%;
 				margin: 0 $gutter;
 			}
 			div {
-				flex-basis: 40%;
+				flex-basis: 50%;
+				margin: 0 2%;
 				font-size: 1.1em;
+				text-align: center;
 			}
 		}
 	}
