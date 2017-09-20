@@ -20,6 +20,7 @@ header {
 			display: initial;
 			margin-right: $gutter;
 			align-self: flex-end;
+			cursor: pointer;
 			li {
 				transition: color .25s ease-in-out;
 				font-size: 1.5em;
