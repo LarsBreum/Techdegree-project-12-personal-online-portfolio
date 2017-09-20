@@ -21,11 +21,20 @@ header {
 			margin-right: $gutter;
 			align-self: flex-end;
 			cursor: pointer;
+			ul {
+				padding: 0;
+			}
 			li {
+				list-style-type: none;
+				display: inline-block;
+			}
+			a {
 				transition: color .25s ease-in-out;
 				font-size: 1.5em;
 				padding: 5px;
 				margin: 0 5px;
+				color: $color-primary-font;
+				text-decoration: none;
 				&:hover {
 					color: $color-primary-accent;
 				}

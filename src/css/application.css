@@ -262,9 +262,12 @@ p, li {
 section {
   border-bottom: 5px solid #5b5b5b; }
   @media screen and (min-width: 768px) {
-    section .section-heading {
+    section .section-heading, section .section-description {
       max-width: 768px;
       margin: 0 auto; } }
+
+a {
+  color: #FFA500; }
 
 wrapper, body, main, header, footer {
   overflow-x: hidden; }
@@ -307,6 +310,19 @@ section:nth-child(even) {
     list-style-type: none;
     padding: 0;
     margin: 0; }
+    .navigation ul:nth-child(2) {
+      margin-top: 280px;
+      bottom: 0; }
+    .navigation ul li.social-icon {
+      text-align: center;
+      color: #FFA500;
+      background: #3c3c3c; }
+      .navigation ul li.social-icon a {
+        margin: 0 auto;
+        padding: 10px;
+        color: #FFA500;
+        background: #3c3c3c;
+        font-size: 1.5em; }
     .navigation ul li {
       padding: 10px;
       display: inline-block;
@@ -339,16 +355,6 @@ section:nth-child(even) {
   @media screen and (min-width: 768px) {
     .mobile-nav {
       display: none; } }
-
-.mobile-social {
-  width: 100%; }
-  .mobile-social ul {
-    width: 100%;
-    display: initial; }
-    .mobile-social ul li {
-      color: black;
-      width: auto;
-      display: block; }
 
 .navOnCanvas {
   right: 0%; }
@@ -388,12 +394,19 @@ header {
         margin-right: 10px;
         align-self: flex-end;
         cursor: pointer; }
+        header .social ul {
+          padding: 0; }
         header .social li {
+          list-style-type: none;
+          display: inline-block; }
+        header .social a {
           transition: color .25s ease-in-out;
           font-size: 1.5em;
           padding: 5px;
-          margin: 0 5px; }
-          header .social li:hover {
+          margin: 0 5px;
+          color: white;
+          text-decoration: none; }
+          header .social a:hover {
             color: #FFA500; } }
   header .header-text {
     padding-left: 10px; }

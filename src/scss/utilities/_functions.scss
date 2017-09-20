@@ -1,0 +1,3 @@
+@function px-to-pct($target, $context: $max-width) {
+	@return ($target / $context) * 100%;
+}

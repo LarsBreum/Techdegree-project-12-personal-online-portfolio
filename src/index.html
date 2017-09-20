@@ -18,13 +18,11 @@
 			<li class="nav-item"><a href="#user-info">About Me</a></li>
 			<li class="nav-item"><a href="#about-site">About this website</a></li>
 		</ul>
-		<div class="mobile-social">
-				<ul>
-					<li class="fa fa-envelope-o"><a class="email" href="mailto:lars.breum.lh@gmail.com"></a>
-					<li class="fa fa-github"><a class="github" href="https://github.com/LarsBreum"></a>
-					<li class="fa fa-linkedin-square"><a class="linkedin" href="https://www.linkedin.com/in/lars-breum-hansen-46b895127/"></a>
-				</ul>
-			</div>
+		<ul class="social">
+			<li class="social-icon"><a class="fa fa-envelope-o email" target="_blank" href="mailto:lars.breum.lh@gmail.com"></a>
+					<li class="social-icon"><a class="fa fa-github github" target="_blank" href="https://github.com/LarsBreum"></a>
+					<li class="social-icon"><a target="_blank" class="fa fa-linkedin-square linkedin" href="https://www.linkedin.com/in/lars-breum-hansen-46b895127/"></a></li>
+		</ul>
 	</nav>
 	<header>
 			<div class="header-text">
@@ -33,9 +31,9 @@
 			</div>
 			<div class="social">
 				<ul>
-					<li class="fa fa-envelope-o"><a class="email" href="mailto:lars.breum.lh@gmail.com"></a>
-					<li class="fa fa-github"><a class="github" href="https://github.com/LarsBreum"></a>
-					<li class="fa fa-linkedin-square"><a class="linkedin" href="https://www.linkedin.com/in/lars-breum-hansen-46b895127/"></a>
+					<li class="social-icon"><a class="fa fa-envelope-o email" target="_blank" href="mailto:lars.breum.lh@gmail.com"></a>
+					<li class="social-icon"><a class="fa fa-github github" target="_blank" href="https://github.com/LarsBreum"></a>
+					<li class="social-icon"><a target="_blank" class="fa fa-linkedin-square linkedin" href="https://www.linkedin.com/in/lars-breum-hansen-46b895127/"></a></li>
 				</ul>
 			</div>
 		<nav class="navigation">
@@ -74,6 +72,7 @@
 			</section>
 			<section id="portfolio" class="flex portfolio">
 				<h2 class="section-heading">Portfolio</h2>
+				<p class="section-description">Here you can see a couple of the projects that best showcase my skills. If you want to see all of them, please <a href="https://github.com/LarsBreum" target="_blank">visit my github page</a></p>
 				<div class="flex-container">
 					<div class="project">
 						<h3>CSS to SASS</h3>
@@ -154,6 +153,26 @@
 						</div>
 						</div>
 					</div>
+					<div class="project">
+						<h3>Optimize a site for performance</h3>
+						<div class="img-container">
+							<img src="img/project-11.png" alt="Project Optimize a website for performance with Gulp">
+						</div>
+						<div class="project-description">
+							<p>Performance and load times can mean everything on the web. In this project I use the awesome front-end preprocessor, gulp, to optimize the sites images and files in order to minimize load times and the user experience. I managed to bring the total download size down to under 1MB, from over 2,7MB by cropping images and compressing code. Best of all - I automated it all with Gulp!</p>
+							<h4>Technologies Used</h4>
+							<ul class="technologies">
+								<li class="tech-logo"><img src="img/HTML5-logo.svg"></li>
+								<li class="tech-logo"><img src="img/javaScript-logo.svg"></li>
+								<li class="tech-logo"><img src="img/gulp-logo.svg"></li>
+							</ul>
+							<div>
+								<a href= "https://github.com/LarsBreum/Techdegree-project-11-optimize-a-site-for-performance" target="_blank">GitHub Repo</a>
+								<a href="https://larsbreum.github.io/Techdegree-project-11-optimize-a-site-for-performance/dist/" target="_blank">Live Version</a>
+						</div>
+						</div>
+					</div>
+
 				</div>
 			</section>
 			<section class="skills">
@@ -180,6 +199,9 @@
 					</div>
 					<div class="slide">
 						<img data-lazy="img/js-logo.png">
+					</div>
+					<div class="slide">
+						<img data-lazy="img/gulp-logo.png">
 					</div>
 				</div>
 			</section>

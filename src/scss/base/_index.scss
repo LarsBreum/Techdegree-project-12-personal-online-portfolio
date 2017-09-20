@@ -15,10 +15,13 @@
  }
  section  {
  	border-bottom: 5px solid $color-secondary-accent;
- 	.section-heading {
+ 	.section-heading, .section-description {
  		@media screen and (min-width: $br-med) {
  			max-width: $br-med;
  			margin: 0 auto;
  		}
  	}
+ }
+ a {
+ 	color: $color-primary-accent;
  }
