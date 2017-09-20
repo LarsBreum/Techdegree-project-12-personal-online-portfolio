@@ -11,8 +11,25 @@ header {
 	top: 0;
 	width: 100%;
 	z-index: 11111;
+	.social {
+		display: none;
+	}
 	@media screen and (min-width: $br-med) {
-		flex-flow: column nowrap;
+		flex-flow: row wrap;
+		.social {
+			display: initial;
+			margin-right: $gutter;
+			align-self: flex-end;
+			li {
+				transition: color .25s ease-in-out;
+				font-size: 1.5em;
+				padding: 5px;
+				margin: 0 5px;
+				&:hover {
+					color: $color-primary-accent;
+				}
+			}
+		}
 	}
 	@extend %transition-right;
 	.header-text {

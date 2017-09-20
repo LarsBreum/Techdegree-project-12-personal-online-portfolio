@@ -64,6 +64,18 @@
   @extend %transition-right;
   z-index: 999;
 }
+.mobile-social {
+  width: 100%;
+  ul {
+    width: 100%;
+    display: initial;
+    li {
+      color: $color-secondary-font;
+      width: auto;
+      display: block;
+    }
+  }
+}
 
 .navOnCanvas {
 	right: 0%;

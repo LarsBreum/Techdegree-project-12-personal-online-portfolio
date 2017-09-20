@@ -283,7 +283,7 @@ wrapper, body, main, header, footer {
     max-width: 100%; }
 
 section:nth-child(even) {
-  background: rgba(213, 12, 232, 0.1); }
+  background: rgba(213, 12, 232, 0.2); }
 
 /***** Building mobile nav *****/
 .sticky-nav {
@@ -340,6 +340,16 @@ section:nth-child(even) {
     .mobile-nav {
       display: none; } }
 
+.mobile-social {
+  width: 100%; }
+  .mobile-social ul {
+    width: 100%;
+    display: initial; }
+    .mobile-social ul li {
+      color: black;
+      width: auto;
+      display: block; }
+
 .navOnCanvas {
   right: 0%; }
 
@@ -368,9 +378,22 @@ header {
   top: 0;
   width: 100%;
   z-index: 11111; }
+  header .social {
+    display: none; }
   @media screen and (min-width: 768px) {
     header {
-      flex-flow: column nowrap; } }
+      flex-flow: row wrap; }
+      header .social {
+        display: initial;
+        margin-right: 10px;
+        align-self: flex-end; }
+        header .social li {
+          transition: color .25s ease-in-out;
+          font-size: 1.5em;
+          padding: 5px;
+          margin: 0 5px; }
+          header .social li:hover {
+            color: #FFA500; } }
   header .header-text {
     padding-left: 10px; }
   header h1 {
