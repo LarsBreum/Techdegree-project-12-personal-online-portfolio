@@ -17,10 +17,22 @@
   },
   "homepage": "https://github.com/LarsBreum/larsbreum.github.io#readme",
   "devDependencies": {
+    "autoprefixer": "^7.1.4",
     "gulp": "^3.9.1",
+    "gulp-clean": "^0.3.2",
+    "gulp-clean-css": "^3.9.0",
+    "gulp-concat": "^2.6.1",
+    "gulp-htmlmin": "^3.0.0",
+    "gulp-image": "^3.0.0",
+    "gulp-inline-source": "^3.1.0",
+    "gulp-js-minify": "0.0.3",
+    "gulp-postcss": "^7.0.0",
     "gulp-refresh": "^1.1.0",
+    "gulp-rename": "^1.2.2",
     "gulp-sass": "^3.1.0",
     "gulp-sourcemaps": "^2.6.1",
-    "gulp-webserver": "^0.9.1"
+    "gulp-util": "^3.0.8",
+    "gulp-webserver": "^0.9.1",
+    "pump": "^1.0.2"
   }
 }
