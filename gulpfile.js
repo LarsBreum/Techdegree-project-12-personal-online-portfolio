@@ -73,7 +73,7 @@ gulp.task('minifyImg', ['cleanImg'], function () {
     .pipe(image({
       pngquant: true,
       optipng: false,
-      zopflipng: true,
+      zopflipng: false	,
       jpegRecompress: false,
       mozjpeg: true,
       guetzli: false,

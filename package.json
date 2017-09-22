@@ -34,5 +34,8 @@
     "gulp-util": "^3.0.8",
     "gulp-webserver": "^0.9.1",
     "pump": "^1.0.2"
+  },
+  "dependencies": {
+    "mozjpeg": "^4.1.1"
   }
 }
