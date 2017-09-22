@@ -11,4 +11,3 @@ navTrigger.addEventListener('click', () => {
 		wrapper[i].classList.toggle('moveToLeft');
 	}
 });
-				

@@ -47,15 +47,15 @@ gulp.task('concatJS', ['clean'], () => {
 		'src/js/nav.js'
 		])
 	.pipe(concat('app.js'))
-	.pipe(gulp.dest('src/js'));
+	.pipe(gulp.dest('dist/js'));
 });
 
-gulp.task('minifyJS', ['concatJS'], function(){
+/*gulp.task('minifyJS', ['concatJS'], function(){
   return gulp.src('./src/js/app.js')
     .pipe(minifyJS())
     .pipe(rename('app.min.js'))
     .pipe(gulp.dest('./dist/js'));
-});
+});*/
 
 gulp.task('minifyHTML', ['clean'], () => {
   return gulp.src('src/*.html')
@@ -89,6 +89,6 @@ gulp.task('clean', () => {
 		.pipe(clean())
 });
 
-gulp.task('build', ['clean', 'process-css', 'concatJS', 'minifyJS', 'minifyHTML'])
+gulp.task('build', ['clean', 'process-css', 'concatJS', 'minifyHTML'])
 
 gulp.task('default', ['build']);
