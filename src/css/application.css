@@ -311,7 +311,7 @@ section:nth-child(even) {
     padding: 0;
     margin: 0; }
     .navigation ul:nth-child(2) {
-      margin-top: 280px;
+      margin-top: 240px;
       bottom: 0; }
     .navigation ul li.social-icon {
       text-align: center;
