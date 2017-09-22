@@ -378,7 +378,6 @@ header {
   color: #FFA500;
   text-align: center;
   display: flex;
-  align-items: left;
   justify-content: space-between;
   position: fixed;
   top: 0;
@@ -430,7 +429,7 @@ header {
 
 main {
   background: #3c3c3c;
-  transition: right .25 ease-out; }
+  transition: right .25s ease-out; }
 
 .user-info {
   display: flex;
