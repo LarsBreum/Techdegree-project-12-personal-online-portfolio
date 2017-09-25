@@ -86,6 +86,7 @@
 }
 .moveToLeft {
 	right: 50%;
+  transition: right 1s ease-out;
 }
 .navTriggerLeft {
 	right: 52%;

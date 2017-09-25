@@ -1,5 +1,5 @@
 %transition-right {
-	transition: right .25s ease-out;
+	transition: right .25s cubic-bezier(.52,.27,.76,1.32);
 }
 
 %flex-row {

@@ -205,7 +205,7 @@
   display: none; }
 
 .wrapper, .mobile-nav, header {
-  transition: right .25s ease-out; }
+  transition: right 0.25s cubic-bezier(0.52, 0.27, 0.76, 1.32); }
 
 .flex-container .project .project-description div {
   display: flex;
@@ -360,7 +360,8 @@ section:nth-child(even) {
   right: 0%; }
 
 .moveToLeft {
-  right: 50%; }
+  right: 50%;
+  transition: right 1s ease-out; }
 
 .navTriggerLeft {
   right: 52%;
@@ -565,7 +566,7 @@ footer {
 .four-skills {
   display: flex;
   flex-flow: row wrap;
-  justify-content: center;
+  justify-content: space-between;
   margin: 0 auto;
   max-width: 768px; }
   .four-skills .slide {
@@ -591,5 +592,7 @@ footer {
 
 .skills {
   padding-bottom: 10px; }
+  .skills p, .skills h2 {
+    margin-left: 10px; }
 
 /*# sourceMappingURL=application.css.map */

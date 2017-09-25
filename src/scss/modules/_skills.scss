@@ -1,7 +1,7 @@
 .four-skills {
 	display: flex;
 	flex-flow: row wrap;
-	justify-content: center;
+	justify-content: space-between;
 	@include centerSection;
 	.slide {
 		margin: $gutter;
@@ -29,4 +29,7 @@
 }
 .skills {
 	padding-bottom: $gutter;
+	p, h2 {
+		margin-left: $gutter;
+	}
 }
