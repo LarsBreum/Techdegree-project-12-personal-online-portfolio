@@ -1,11 +1,32 @@
-.skills-carousel {
+.four-skills {
+	display: flex;
+	flex-flow: row wrap;
+	justify-content: center;
+	@include centerSection;
+	.slide {
+		margin: $gutter;
+		padding: auto;
+	}
+}
+.skills-wrap {
 	position: relative;
 	@include centerSection;
+	button {
+		position: absolute;
+		background: none;
+		outline: none;
+		border: none;
+		color: $color-primary-font;
+		font-size: 1.5em;
+		top: 45%;
+	}
+	.left-arw {
+		left: 0;
+	}
+	.right-arw {
+		right: 0;
+	}
 }
 .skills {
-	padding: $gutter 0;
-	@include centerSection;
-	p, h2 {
-		margin-left: $gutter;
-	}
+	padding-bottom: $gutter;
 }
